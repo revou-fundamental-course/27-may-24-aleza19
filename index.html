@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Adhisty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="logo">
+            <img src="logo.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="#">Achievement</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <h1 id="welcome-message">Hi <span id="user-name">Name</span>, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+            <div class="image-placeholder">1366x578</div>
+        </section>
+        <section class="facilities">
+            <h2>Our Facilitation</h2>
+            <div class="facility">
+                <div class="icon-placeholder"></div>
+                <p>Professional Teacher</p>
+            </div>
+            <div class="facility">
+                <div class="icon-placeholder"></div>
+                <p>Sport Field</p>
+            </div>
+            <div class="facility">
+                <div class="icon-placeholder"></div>
+                <p>Classroom</p>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Message Us</h2>
+            <form id="message-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="birth-date">Tanggal Lahir:</label>
+                <input type="date" id="birth-date" name="birth-date" required>
+                
+                <label for="gender">Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                <label for="female">Perempuan</label>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="submitted-message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by RevoU</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
